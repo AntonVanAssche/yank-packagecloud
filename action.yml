@@ -1,5 +1,5 @@
-name: Upload package PackageCloud.io
-description: Upload a package to PackageCloud.io
+name: Yank package PackageCloud.io
+description: Delete a package from PackageCloud.io
 branding:
   icon: package
   color: blue
@@ -11,13 +11,13 @@ inputs:
     description: The username to use on PackageCloud.io
     required: true
   packagecloud-repo:
-    description: The repository to upload on this user
+    description: The repository to user
     required: true
   packagecloud-distrib:
-    description: The distribution/version this package is meant to
+    description: The distribution/version this package is located at
     required: false
   packagecloud-token:
-    description: The Token with push access
+    description: The Token with yank access
     required: true
 runs:
   using: composite
