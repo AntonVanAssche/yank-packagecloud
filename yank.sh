@@ -16,4 +16,4 @@ fi
 
 echo "Deploying package: ${PACKAGE_NAME}"
 echo "To repository: ${UPLOAD_PATH}"
-package_cloud push ${UPLOAD_PATH} ${PACKAGE_NAME}
+package_cloud yank ${UPLOAD_PATH} ${PACKAGE_NAME}
