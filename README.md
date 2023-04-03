@@ -1,6 +1,6 @@
-# Upload to Packagecloud.io
+# Delete from Packagecloud.io
 
-This action encapsulates the setup to upload any package to PackageCloud.io.
+This action encapsulates the setup to delete any package from PackageCloud.io.
 
 
 ## Inputs
@@ -13,12 +13,12 @@ inputs:
     description: The username to use on PackageCloud.io
     required: true
   packagecloud-repo:
-    description: The repository to upload on this user
+    description: The repository to user
     required: true
   packagecloud-distrib:
-    description: The distribution/version this package is meant to (only for certain package types)
+    description: The distribution/version this package is located at
     required: false
   packagecloud-token:
-    description: The Token with push access
+    description: The Token with yank access
     required: true
 ```
