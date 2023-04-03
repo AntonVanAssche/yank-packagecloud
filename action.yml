@@ -22,8 +22,8 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Upload package to PackageCloud.io
-      run: ${{ github.action_path }}/push.sh
+    - name: Delete package from PackageCloud.io
+      run: ${{ github.action_path }}/yank.sh
       shell: bash
       env:
         PACKAGE_NAME: ${{ inputs.package-name }}
